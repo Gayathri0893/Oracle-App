@@ -1,0 +1,123 @@
+<div style="padding:0" class="container">
+<div class="debreifContainerouter">
+<md-card style="border-radius:10px 10px 10px 10px" class="margintop10" ng-repeat = "item in timeArray track by $index">
+<div class="debreifContainerinner">
+	  <form class="form-horizontal" action="/action_page.php">
+
+			
+
+			 <!-- <div class="form-group col-sm-25 margintop30">
+		      <label class="col-sm-12 label-my">FIELD JOB NAME</label>
+		      <div class="col-sm-12">
+		         <select class="form-control select-debrief" id="sel1">
+						 <option>Clarity Code User 001</option>
+						 <option>Clarity Code User 002</option>
+						 <option>Clarity Code User 003</option>
+						 <option>Clarity Code User 004</option>
+				</select>
+		      </div>
+		    </div> -->
+
+		  
+
+		    <div class="form-group col-sm-20 margintop30">
+		      <label class="col-sm-12 label-my" for="email" translate="{{item.workType.title}}"></label>
+		      <div class="col-sm-12">
+		         <select class="form-control select-debrief " id="sel1" ng-model="item.selectedWorktype" ng-options="x.value for x in item.workType.values" ng-change="selectItem(item.selectedWorktype,item)">
+				    <!-- <option>Travel</option>
+				    <option>Labor</option> -->
+				  </select>
+		      </div>
+		    </div>
+
+		   <div class="form-group col-sm-20 margintop30">
+		      <label class=" col-sm-12 label-my" for="email" translate="{{item.item.title}}"></label>
+		      <div class="col-sm-12">
+							<!-- <select class="form-control select-debrief " id="sel1" ng-model="item.selectedItem" ng-options="item.selectedWorktype.value + x.itemName for x in item.item.values" ng-change="selectShiftDate(item)"> -->
+		         <select class="form-control select-debrief " id="sel1" ng-model="item.selectedItem" ng-options="x.itemName for x in item.item.values" ng-change="selectShiftDate(item)">
+				    <!-- <option>Standard</option>
+				    <option>Overtime</option>
+						<option>DoubleTime</option> -->
+				  </select>
+		      </div>
+		    </div>
+
+		  <div class="form-group col-sm-20 margintop30">
+		      <label class=" col-sm-12 label-my" for="email" translate="{{item.description.title}}"></label>
+		      <div class="col-sm-12">
+		         <!-- <select class="form-control select-debrief " id="sel1" ng-model="item.selectedItemDesc" ng-options="x for x in item.description.value">
+				    <option>labor charges for pump service</option>
+				  </select> -->
+				  <input type="text" name="description" class="form-control" ng-model="item.selectedItemDesc">
+		      </div>
+		    </div>
+		   
+
+		    <!--  <div class="form-group col-sm-25 margintop30">
+		      <label class=" col-sm-12 label-my" for="email" translate="{{item.shiftCode.title}}"></label>
+		      <div class="col-sm-12">
+		         <select class="form-control select-debrief " id="sel1" ng-options="x.ShiftCodeName for x in item.shiftCode.value" ng-model="item.shiftCode.selectedshiftcode">
+				  </select>
+		      </div>
+		    </div> -->
+
+		     <div class="form-group col-sm-20 margintop30" >
+		      <label class=" col-sm-12 label-my" for="email" translate="{{item.startDate.title}}" style="text-align: left;">-</label>
+		      <!-- <label class=" col-sm-6 label-my" for="email" translate="{{item.endDate.title}}"></label> -->
+		      <div class="col-sm-12">
+		      	<!-- <input  class="form-control date-picker" type="text" ng-model="datePicker.startDate" /> -->
+
+					        <p class="input-group">
+					          <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="item.startDate.value" is-open="item.calendarOpened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" ng-change="setDuration($index)"/>
+
+					          <span class="input-group-btn">
+					            <button type="button" class="btn btn-default" style="border-color:#ccc !important" ng-click="openCalendar(item,'Time')"><i class="glyphicon glyphicon-calendar"></i></button>
+					          </span>
+					          <!-- <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="item.endDate.value"/> -->
+					        </p>
+
+		      </div>
+		    </div>
+
+		    <!--  <div class="form-group col-sm-25">
+		      <label class="control-label col-sm-12" for="email" translate="{{item.endDate.title}}"></label>
+		      <div class="col-sm-12">
+
+		         <div class="form-group">
+		                <div class='input-group date' id='datetimepickerEndDate'>
+		                    <input type='text' class="form-control" ng-model="item.endDate.value" id="endDate"/>
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+            		</div>
+		      </div>
+		    </div> -->
+
+		     <div class="form-group col-sm-20 margintop30">
+		      <label class=" col-sm-12 label-my" for="email" translate="{{item.duration.title}}"></label>
+		      <div class="col-sm-12">
+		         <input type="text" class="form-control" id="sel1" ng-model="item.duration.value" ng-init="item.duration.value='08:00'"/>
+
+		      </div>
+		    </div>
+
+		     <div style="padding-left:20px;padding-right:20px;margin-bottom:0 !important	" class="form-group col-md-12">
+
+		      <label class="label-my col-md-12 " for="comment" translate="Comments">COMMENTS</label>
+					<div class="col-sm-12">
+					<textarea class="form-control text-area" rows="5" id="comment" ng-model="item.comments.value"></textarea>
+				</div>
+			</div>
+			</div>
+  		</form>
+
+
+  		<section style="border-radius:0 0 10px 10px" layout="row" layout-sm="column" layout-align="center center" layout-wrap class="time-btns">
+  			<md-button class="time-font time-add" ng-click = "addArray('Time')">ADD</md-button>
+  			<md-button class="time-font time-delete" ng-click="deleteArray($index,item,'Time')">DELETE</md-button>
+  			<md-button class="time-font time-copy" ng-click="copyArray(item,'Time')">COPY</md-button>
+  		</section>
+</md-card>
+</div>
+</div>
