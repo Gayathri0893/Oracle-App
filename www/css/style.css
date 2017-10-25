@@ -46,7 +46,7 @@ a, a:hover, a:focus {
    height: 66px;
     /*height: 8%;*/
     padding: 15px 50px;
-    background-color: #003b4d !important;
+    background-color: #ffffff !important;
     border: none !important;
     border-radius: 0px !important;
     margin-bottom: 0px !important;
@@ -68,7 +68,7 @@ a, a:hover, a:focus {
 .sidenav-text{
     font-family: OpenSans-Bold;
     font-size: 12px;
-    color: #2d383f;
+    color: #ffffff;
 }
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -81,7 +81,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 130px;
     max-width: 130px;
-    background: #fff;
+    background: #003b4d;
     color: #fff;
     transition: all 0.3s;
     box-shadow: 0 0 10px #000;
@@ -194,7 +194,8 @@ a.article, a.article:hover {
     /* height: 66px; */
     padding-bottom: 18px;
     padding-top: 18px;
-    border-bottom: solid 1px #f3f3f3;
+    /*border-bottom: solid 1px #f3f3f3;*/
+    outline: none;
 
 }
 .categryAicon img{
@@ -202,13 +203,13 @@ a.article, a.article:hover {
 
 }
 .user-avatar{
-    height: 19px;
-    width: 20px;
+     height: 43px;
+    width: 46px;
     background-position: center !important;
-    background-image: url('../images/user_avator/VectorSmartObject.png');
+    background-image: url('../images/user_avator/username_grey.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -236,7 +237,7 @@ a.article, a.article:hover {
 .title{
   font-family: OpenSans-Light;
   font-size: 24px;
-  color: #fff;
+  color: #283d3f;
   width: 75%;
   text-align: center;
       letter-spacing: 1px;
@@ -398,7 +399,7 @@ a.article, a.article:hover {
     text-align: center;
 }
 .category-title{
-    background-color: #2d383f !important;
+    background-color: #003b4d !important;
 }
 .subheader-btns{
 
@@ -429,7 +430,7 @@ a.article, a.article:hover {
       color: #ffffff;
       text-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 0.35);
       height: 9%;
-      background-color: #00aa7e;
+      background-color: #f80000;
       outline: none;
 }
 /*Calendar Styles*/
@@ -454,7 +455,7 @@ a.article, a.article:hover {
     max-height: 64px;
     padding: 0 16px;
     margin: 0;
-    background-color: #2d383f;
+    background-color: #003b4d;
 }
 
 
@@ -690,8 +691,8 @@ md-tab-data{
     z-index: 20;
 }
 .debrief-btn , .startwork-btn{
-  background-color: #00aa7e !important;
-  color: #fff !important;
+  background-color: #f80000 !important;
+  color: #ffffff !important;
 }
 
 table {
@@ -831,7 +832,7 @@ td em{
 }
 
 .showTaskList md-toolbar{
-  background-color: #2d383f;
+  background-color: #003b4d;
 }
 
 
@@ -878,7 +879,7 @@ width  : 42px;
 }
 
 md-tabs-wrapper{
-  background-color: #2d383f !important;
+  background-color: #003b4d !important;
 }
 .md-tab{
   color: #5f6467 !important;
@@ -1020,8 +1021,6 @@ a {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: #ffffff;
-    border-radius: 40px;
 }
 .popover__content {
     opacity: 0;
@@ -1242,7 +1241,7 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
   color: #000000 !important;
 }
 .accept-btn{
-   background-color: #00aa7e !important;
+   background-color: #f80000 !important;
   color: #ffffff !important;
 }
 .toolbar{
@@ -1348,7 +1347,7 @@ color:#004b8d;
   height: 28px;
 }
 .MyCalendar{
-  background-image: url(../images/calendar/Rectangle8.png);
+  background-image: url(../images/calendar/Rectangle8copy.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 32px;
@@ -1362,7 +1361,7 @@ color:#004b8d;
   height: 36px;
 }
 .MyTask{
-  background-image: url(../images/mytask/Shape36.png);
+  background-image: url(../images/mytask/myTaskSel.png);
    background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 26px;
@@ -1376,7 +1375,7 @@ color:#004b8d;
   height: 40px;
 }
 .TaskOverview{
-  background-image: url(../images/taskoverview/taskoverview.png);
+  background-image: url(../images/taskoverview/taskOverflowSel.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 30px;
@@ -1390,7 +1389,7 @@ color:#004b8d;
   height: 27px;
 }
 .Debrief{
-  background-image: url(../images/debrief/briefcopy.png);
+  background-image: url(../images/debrief/brief.png);
    background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 38px;
@@ -1398,7 +1397,7 @@ color:#004b8d;
 }
 
 .md-tab.md-active {
-  color : #00aa7e !important;
+  color :#00aa7e !important;
   font-weight: 600 !important;
 
 }
@@ -1466,7 +1465,7 @@ font-size: 80%;
 }
 .selectedTabColor{
   font-weight: bold !important;
-  color: #00aa7e !important;
+  color: #f80000 !important;
 }
 
 md-checkbox.md-default-theme.md-checked ._md-icon, md-checkbox.md-checked ._md-icon {
@@ -1645,4 +1644,20 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
   border-radius: 15px;
   background-color: #00aa7e;
   border : 2px solid #083574;
+}
+.mpls-img{
+    
+    height: 600px;
+    background-image: url(../images/MPLS.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.mpls2-img{
+   
+    height: 400px;
+    background-image: url(../images/MPLS2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
 }

@@ -23,6 +23,8 @@ app.controller('taskOverFlowController', function($scope, $http, $state, $rootSc
             'oracle-mobile-backend-id': 'cc9a9b83-02ff-4be1-8b70-bccb3ac6c592'
         }
     };
+    $scope.oneAtATime = true;
+
     activate();
     function activate(){
         getDebriefStagesInfo();
@@ -393,4 +395,10 @@ $scope.accept = function() {
     $scope.mapClicked = function(){
         $scope.mapIsClicked = !$scope.mapIsClicked;
     }
+
+    $scope.status = {
+    isCustomHeaderOpen: false,
+    isFirstOpen: true,
+    isFirstDisabled: false
+  };
 });
