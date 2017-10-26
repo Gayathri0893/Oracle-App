@@ -179,6 +179,7 @@ a.article, a.article:hover {
     background-image: url(../images/Oracle-logo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border-bottom: solid 1px #ffffff;
 }
 .hamburger{
     height: 28px;
@@ -194,7 +195,7 @@ a.article, a.article:hover {
     /* height: 66px; */
     padding-bottom: 18px;
     padding-top: 18px;
-    /*border-bottom: solid 1px #f3f3f3;*/
+    border-bottom: solid 1px #fff;
     outline: none;
 
 }
@@ -1461,7 +1462,7 @@ font-size: 80%;
   text-align:center;
 }
 .fc-myCalendar-button{
-  color: #00aa7e !important;
+  color: #f80000 !important;
 }
 .selectedTabColor{
   font-weight: bold !important;
