@@ -1,5 +1,45 @@
 app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalendarConfig, $rootScope, $state, $http, cloudService, localService, valueService) {
 
+
+  $scope.lists = [
+    {
+      heading : "To add the quipment for the job number 20",
+      date : "20/5/2017",
+    },
+    {
+      heading : "To add the quipment for the job number 20",
+      date : "20/5/2017",
+    },
+    {
+      heading : "To add the quipment for the job number 20",
+      date : "20/5/2017",
+    },
+    {
+      heading : "To add the quipment for the job number 20",
+      date : "20/5/2017",
+    },
+    {
+      heading : "To add the quipment for the job number 20",
+      date : "20/5/2017",
+    },
+    {
+      heading : "To add the quipment for the job number 20",
+      date : "20/5/2017",
+    },
+    {
+      heading : "To add the quipment for the job number 20",
+      date : "20/5/2017",
+    },
+  ]
+
+
+
+
+
+
+
+
+
     $scope.showSearchTaskDiv = false;
 
     // valueService.setResourceId("5");
@@ -78,7 +118,7 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
     }
 
     function setEventArray(response) {
-        
+
         response.forEach(function (item) {
 
             var startDate = item.Start_Date.split(' ');

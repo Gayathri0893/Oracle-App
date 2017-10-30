@@ -24,7 +24,7 @@
 
 body {
    /* font-family: 'Poppins', sans-serif;*/
-    background: #fafafa;
+    background: #f3f3f3 !important;
    /* overflow: hidden;*/
 }
 
@@ -43,13 +43,13 @@ a, a:hover, a:focus {
 }
 
 .navbar {
-   height: 66px;
-    /*height: 8%;*/
-    padding: 15px 50px;
-    background-color: #ffffff !important;
+   height: 55px;
+    padding: 15px 5px;
+    background-color: #f5f5f5 !important;
     border: none !important;
     border-radius: 0px !important;
     margin-bottom: 0px !important;
+    box-shadow: 0px 1px 4px #ddd;
     /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);*/
 }
 
@@ -81,13 +81,11 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 130px;
     max-width: 130px;
-    background: #003b4d;
+    background: #303030;
     color: #fff;
     transition: all 0.3s;
-    box-shadow: 0 0 10px #000;
-     z-index:9999;
-     text-transform: uppercase;
-         position: relative;
+    z-index:9999;
+    text-transform: uppercase;
 }
 
 #sidebar.active {
@@ -96,10 +94,10 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     /*padding: 13px;*/
-    height: 150px;
+    height: 65px;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.20);
     /*background-color: #f80000;*/
-    
+
 }
 
 #sidebar ul.components {
@@ -177,16 +175,16 @@ a.article, a.article:hover {
     background: white;
     height: 100%;
     background-position: center !important;
-    background-image: url(../images/alex.png);
+    background-image: url(../images/Oracle-logo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-bottom: solid 1px #ffffff;
 }
 .hamburger{
-    height: 28px;
-    width: 44px;
+  height: 25px;
+  width: 25px;
     background-position: center !important;
-    background-image: url(../hamburgermenu.png);
+    background-image: url(../menu.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -238,7 +236,7 @@ a.article, a.article:hover {
 }
 .title{
   font-family: OpenSans-Light;
-  font-size: 24px;
+  font-size: 18px;
   color: #283d3f;
   width: 75%;
   text-align: center;
@@ -1347,7 +1345,6 @@ color:#004b8d;
   background-size: 100% 100%;
   width: 32px;
   height: 28px;
-
 }
 .MyCalendar{
   background-image: url(../images/calendar/Rectangle8copy.png);
@@ -1649,27 +1646,18 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
   border : 2px solid #083574;
 }
 .mpls-img{
-    
+
     height: 600px;
     background-image: url(../images/MPLS.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+
 }
 .mpls2-img{
-   
+
     height: 400px;
     background-image: url(../images/MPLS2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
-}
-.categryAicon div{
-  display: inline-block;
-}
-.settings{
-  position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
+
 }
