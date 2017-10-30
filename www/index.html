@@ -135,7 +135,7 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar" ng-show="$root.Islogin">
         <div class="sidebar-header">
-            <div class="logoIcon"></div>
+            <div class="logoIcon img-circle"></div>
         </div>
 
         <ul class="list-unstyled components">
@@ -145,10 +145,13 @@
                 ng-if="(item.name=='Debrief' && $root.showDebrief) || item.name=='MyCalendar' || item.name=='MyTask' ||(item.name=='TaskOverview' && $root.showTaskDetail)">
                 <!--  <img ng-src="{{item == selectedItem ? item.imageSelected : item.image}}"><br> -->
                 <div ng-class="{ '{{item.name}}selected' : item.id == $root.selectedItem, '{{item.name}}' : item.id !== $root.selectedItem }"></div>
-                <br>
+                <!-- <br> -->
                 <span class="sidenav-text" ng-class="{'sidenav-text-Sel':item.id == $root.selectedItem}">{{item.displayName}}</span>
             </li>
-
+            <li class="categryAicon settings">
+                 <div class="settingImage"></div>
+                <span class="sidenav-text">SETTINGS</span>
+            </li>
         </ul>
 
 

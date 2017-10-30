@@ -1,27 +1,329 @@
-<div class="signup-form">
 
-  <div class="inner-contentLogin">
 
-    <div class="logo">
-      <img src="images/Oracle-logo.png" width="80%" /><br>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+
+
+<style>
+
+
+
+  .leftBackground {
+        background-color: #f45b69;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+
+
+  }
+
+  .rightBackground {
+    background-color: #fff;
+      height : 100%;
+      padding: 20px;
+  }
+
+.divide {
+  width: 45px;
+  height:2px;
+  background-color: #fff;
+  margin-left: 115px;
+
+}
+
+.welcome-header{
+  margin-top: 40px;
+
+}
+
+.header-login {
+  font-size: 50px;
+margin-left: 13px;
+margin-top: 10px;
+color: #fff;
+}
+
+.user {
+  background: none;
+    border: 1px solid #fff;
+    border-radius: 0 !important;
+}
+
+.pwd{
+  background: none;
+border: 1px solid #fff;
+border-radius: 0 !important;
+
+color: #fff !important;
+}
+
+input::placeholder {
+  color : #fff;
+}
+
+.labelStyle {
+color : #fff;
+    font-size: 14px;
+}
+
+.loginBtn {
+  width: 170px;
+height: 50px;
+margin-top: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  color:#f45b69;
+  font-size: 14px;
+  font-family: Open Sans;
+  box-shadow: 0px 1px 7px #929292;
+  font-weight:600;
+}
+
+.footer-text {
+  position : relative;
+  height:150px;
+}
+
+.footer-text span {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right:0;
+  float:right;
+  color:#fff;
+  font-size: 9px;
+}
+
+.divider{
+  width:2px;
+  height
+}
+
+.rightBackground h1{
+      font-size: 25px;
+      font-weight: 400;
+      color : #f45b69 ;
+      margin-bottom: 40px;
+      font-family: Arial;
+
+}
+
+.oracleHeader{
+  color : #f45b69 ;
+}
+
+.main-panel_content{
+  clear: both;
+    width: 90%;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.oracle_btn{
+  display: inline-block;
+    margin-top:130px;
+    background: none ;
+    border:1px solid #fff !important;
+    border-radius: 100px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 50px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFF;
+    cursor: pointer;
+    transition: box-shadow .2s ease,border .2s ease;
+    border:none;
+}
+
+.oracle_btn:hover{
+border : none ;
+background-color: #fff;
+color : #f45b69;
+}
+
+
+.form__button {
+  display: inline-block;
+    margin: 25px auto;
+    background-color: #f45b69 ;
+    border-radius: 100px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 60px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFF;
+    cursor: pointer;
+    transition: box-shadow .2s ease,border .2s ease;
+    border:none;
+}
+
+.text--center {
+  text-align: center;
+}
+.main-panel__table-cell {
+    position: relative;
+    vertical-align: middle;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  label {
+    font-size: 9px;
+    font-weight: 600;
+    font-family :Open Sans;
+    color: #434C5E;
+  }
+
+  .labelOutline:focus {
+    outline : #000 !important ;
+  }
+
+.divider {
+  width : 30px;
+  height:2px;
+  background-color: #f45b69;
+  margin-bottom: 1px;
+  border: 10px;
+}
+
+.divider-white {
+  width : 50px;
+  height:3px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 760px) {
+  .leftBackground{
+    display: none;
+  }
+}
+
+.form__legal {
+margin-bottom : 0 ;
+padding-bottom: 20px;
+padding-top: 20px;
+font-size: 10px;
+color :#ddd;
+}
+
+.imageHead{
+  border-radius:50px;
+  width:100px;
+  height:100px;
+  background-color: #fff;
+  margin:0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.name-text{
+  margin-top: 10px;
+  color : #fff;
+}
+
+.parent-circle{
+  border-radius:55px;
+  width:110px;
+  height:110px;
+  background: none;
+  border : 1px solid #fff ;
+  display: table;
+  margin: 0 auto;
+}
+
+.foot{
+text-align: center;
+font-size: 9px;
+width:200px;
+height:50px;
+background-color: #fff;
+margin: 0 auto;
+border-radius: 100px;
+}
+
+</style>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class=" col-md-4 leftBackground">
+
+          <div class="parent-circle text-center">
+          <div class="img-fluid text-center imageHead">
+            <img src="images/alex.png" width="100%"/>
+          </div>
+        </div>
+
+          <div class="name-text text--center">
+            <span style="font-size:14px;display:block;font-weight:600">Munez</span>
+            <span style="font-size:12px;color:#f9f9f9;font-weight:400">Field Engineer</span>
+
+            <p style="margin-top:100px;font-style:italic;font-size:14px;color:#f9f9f9">"Oracle core technoogies are built <br>in such a way<br>that the efficiency we get is unmatched."
+
+              <div class="divider-white"></div>
+
+              <div class="text--center">
+                    <button type="submit" class="oracle_btn sign-up__submit">
+                    ORACLE.COM
+                    </button>
+                  </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 rightBackground">
+
+          <div class="row">
+              <div class="col-md-12">
+                  <a style="float:right;font-size:13px;">SIGN UP</a>
+              </div>
+          </div>
+
+
+          <div class="main-panel__table-cell">
+          <div class="main-panel_content">
+            <form class="main_panel-form">
+
+                <div class="divider"></div>
+
+                <h1 class="main-panel__heading">
+                <span style="color: #434C5E;;font-size:20px;font-weight:100">Login into</span> <span style="color:#f45b69 ;font-size:25px;font-weight:600">Oracle</span>
+                </h1>
+
+
+                  <div class="form-group">
+                    <label class="labelOutline" for="exampleInputEmail1">USERNAME</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                  </div>
+                  <div class="form-group">
+                    <label class="labelOutline" for="exampleInputPassword1">PASSWORD</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                  </div>
+
+                <div class="text--center">
+                      <button type="submit" class="form__button sign-up__submit">
+                        LOGIN
+                      </button>
+
+                    <p class="form__legal">By clicking "Login" I agree to Oracle Terms of Service and Privacy Policy.</p>
+
+                  </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="loginTitle">Sign in using your credentials</div>
-
-    <div class="form-back">
-      <form style="margin-top:20px;">
-        <input type="field" placeholder="Username" id="user" ng-model="userName" required />
-
-        <input type="password" placeholder="Password" id="pass" ng-model='password' required/>
-
-      </form>
-    </div>
-
-    <button class="margintop30" type="button" id="loginButton"  ng-click="login()">SIGN IN</button>
-
-
   </div>
 
-  <!-- <p style="color:#fff;font-size:9px;text-align:center;">@2017 Emerson Electric Co. All rights reserved</p> -->
-
-</div>
