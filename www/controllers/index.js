@@ -62,36 +62,38 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
 
     $scope.sideNavItems = [
         {
-            id: 1,
-            displayName: "My Calendar",
-            name: "MyCalendar",
-            controller: "myTask",
-            image: "images/calendar/Rectangle8.png",
-            imageSelected: "images/calendar/Rectangle8copy.png"
+             id: 1,
+            displayName: "Home",
+            name: "TaskOverview",
+            controller: "taskOverflow",
+            image: "images/oracle/home.png",
+            imageSelected: "images/oracle/home.png"
         },
         {
             id: 2,
-            displayName: "My Field Job",
+            displayName: "Task",
             name: "MyTask",
             controller: "myTask",
-            image: "images/mytask/Shape36.png",
-            imageSelected: "images/mytask/myTaskSel.png"
+            image: "images/oracle/list.png",
+            imageSelected: "images/oracle/list.png"
         },
         {
             id: 3,
-            displayName: "Field Job Overview",
-            name: "TaskOverview",
-            controller: "taskOverflow",
-            image: "images/taskoverview/taskoverview.png",
-            imageSelected: "images/taskoverview/taskOverflowSel.png"
-        },
-        {
-            id: 4,
+
             displayName: "Debrief",
             name: "Debrief",
             controller: "debrief",
-            image: "images/debrief/brief copy.png",
-            imageSelected: "images/debrief/brief.png"
+            image: "images/oracle/debrief.png",
+            imageSelected: "images/oracle/debrief.png"
+        },
+        {
+            id: 4,
+
+            displayName: "Calendar",
+            name: "MyCalendar",
+            controller: "myTask",
+            image: "images/oracle/calendar.png",
+            imageSelected: "images/oracle/calendar.png"
         }];
 
     $rootScope.selectedItem = $scope.sideNavItems[0].id;
