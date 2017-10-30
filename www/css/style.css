@@ -1340,61 +1340,78 @@ color:#004b8d;
     margin: 0 auto;
 }
 .MyCalendarselected{
-  background-image: url(../images/calendar/Rectangle8copy.png);
+  background-image: url(../images/calendar/calendar.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 32px;
-  height: 28px;
+  height: 32px;
+    float:left;
 }
 .MyCalendar{
-  background-image: url(../images/calendar/Rectangle8copy.png);
+  background-image: url(../images/calendar/calendar.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 32px;
-  height: 28px;
+  height: 32px;
+    float:left;
 }
 .MyTaskselected{
-  background-image: url(../images/mytask/myTaskSel.png);
+  background-image: url(../images/mytask/list.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 26px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
+    float:left;
 }
 .MyTask{
-  background-image: url(../images/mytask/myTaskSel.png);
+  background-image: url(../images/mytask/list.png);
    background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 26px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
+    float:left;
 }
 .TaskOverviewselected{
-  background-image: url(../images/taskoverview/taskOverflowSel.png);
+  background-image: url(../images/taskoverview/home.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 35px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+    float:left;
 }
 .TaskOverview{
-  background-image: url(../images/taskoverview/taskOverflowSel.png);
+  background-image: url(../images/taskoverview/home.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 30px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
+    float:left;
 }
 .Debriefselected{
-  background-image: url(../images/debrief/brief.png);
+  background-image: url(../images/debrief/debrief.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 36px;
-  height: 27px;
+  width: 32px;
+  height: 32px;
+    float:left;
 }
 .Debrief{
-  background-image: url(../images/debrief/brief.png);
+  background-image: url(../images/debrief/debrief.png);
    background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 38px;
-  height: 27px;
+  width: 32px;
+  height: 32px;
+    float:left;
 }
+.settingImage{
+    background-image: url(../images/debrief/settings.png);
+    background-repeat: no-repeat;
+   background-size: 100% 100%;
+   width: 32px;
+   height: 32px;
+   float:left;
+}
+
 
 .md-tab.md-active {
   color :#00aa7e !important;
