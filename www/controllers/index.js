@@ -65,7 +65,7 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
         {
             id: 1,
             displayName: "Home",
-            name: "MyTask",
+            name: "Home",
             controller: "myTask",
             image: "images/mytask/Shape36.png",
             imageSelected: "images/mytask/myTaskSel.png"
@@ -151,6 +151,26 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
                 }, 100);*/
 
                 $rootScope.selectedCategory = 'My Field Job';
+
+                break;
+            case "Home":
+
+                $rootScope.showDebrief = false;
+
+                $rootScope.showTaskDetail = false;
+
+                $state.go("home");
+
+               /* setTimeout(function () {
+
+                    $('.fc-view-container').hide();
+                    $('#calendar > div.fc-toolbar.fc-header-toolbar > div.fc-center > div').hide();
+                    $('.fc-toolbar.fc-header-toolbar').hide();
+                    $('.showMonth').hide();
+                    $('.showTaskList').show();
+                }, 100);*/
+
+                $rootScope.selectedCategory = 'Home';
 
                 break;
 

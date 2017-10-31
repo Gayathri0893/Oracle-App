@@ -1373,6 +1373,20 @@ color:#004b8d;
   width: 26px;
   height: 36px;
 }
+.Homeselected{
+  background-image: url(../images/house.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 32px;
+  height: 32px;
+}
+.Home{
+  background-image: url(../images/house.png);
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 32px;
+  height: 32px;
+}
 .TaskOverviewselected{
   background-image: url(../images/taskoverview/taskOverflowSel.png);
   background-repeat: no-repeat;

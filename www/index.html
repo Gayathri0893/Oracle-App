@@ -172,7 +172,7 @@
 
             <li class="categryAicon" ng-click="menuClick(item)" ng-repeat="item in sideNavItems"
                 ng-class="{'active':item.id == $root.selectedItem}"
-                ng-if="(item.name=='Debrief' && $root.showDebrief) || item.name=='MyCalendar' || item.name=='MyTask' ||(item.name=='TaskOverview' && $root.showTaskDetail)">
+                ng-if="(item.name=='Debrief' && $root.showDebrief) || item.name=='MyCalendar' || item.name=='Home'|| item.name=='MyTask' ||(item.name=='TaskOverview' && $root.showTaskDetail)">
                 <!--  <img ng-src="{{item == selectedItem ? item.imageSelected : item.image}}"><br> -->
                 <div ng-class="{ '{{item.name}}selected' : item.id == $root.selectedItem, '{{item.name}}' : item.id !== $root.selectedItem }"></div>
                 
