@@ -61,7 +61,7 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
     }
 
     $scope.sideNavItems = [
-        
+
         {
             id: 1,
             displayName: "Home",
@@ -78,7 +78,7 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
             image: "images/calendar/Rectangle8.png",
             imageSelected: "images/calendar/Rectangle8copy.png"
         },
-        
+
         {
             id: 3,
             displayName: "Task",
