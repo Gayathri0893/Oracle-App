@@ -131,30 +131,51 @@
 
 <span class="md-dialog-container" style="background-color:#ffffff;opacity:0.8;text-align:center;z-index:1051 !important;" us-spinner="{radius:10, width:5, length: 12}"><img src="./images/02hat_loader_final2.gif" /></span>
 
-<div class="wrapper">
+<div class="wrapper" style="overflow:hidden !important">
     <!-- Sidebar Holder -->
     <nav id="sidebar" ng-show="$root.Islogin">
-        <div class="sidebar-header">
-            <div class="logoIcon img-circle"></div>
-            <div style="text-align:center">Alex</div>
-            <div style="text-align:center">Field Engineer</div>
-        </div>
 
-        <ul class="list-unstyled components">
+    <div class="circle-online">
+      <div class="parent-circlee text-center">
+      <div class="img-fluid text-center imageHeadd">
+        <img src="images/alex.png" width="100%"/>
+      </div>
+    </div>
+  </div>
 
-            <li class="categryAicon" ng-click="menuClick(item)" ng-repeat="item in sideNavItems"
-                ng-class="{'selectedCategory':item.id == $root.selectedItem}"
-                ng-if="item.name=='Debrief'  || item.name=='MyCalendar' || item.name=='MyTask' ||item.name=='TaskOverview' ">
-                <!--  <img ng-src="{{item == selectedItem ? item.imageSelected : item.image}}"><br> -->
-                <div ng-class="{ '{{item.name}}selected' : item.id == $root.selectedItem, '{{item.name}}' : item.id !== $root.selectedItem }"></div>
-                <!-- <br> -->
-                <span class="sidenav-text" ng-class="{'sidenav-text-Sel':item.id == $root.selectedItem}">{{item.displayName}}</span>
-            </li>
-            <li class="categryAicon settings">
-                 <div class="settingImage"></div>
-                <span class="sidenav-text" style="float:left;padding-left:15px">SETTINGS</span>
-            </li>
-        </ul>
+
+
+  <div class="name-text text-center" style="padding-top:10px;">
+    <span style="font-size:11px;display:block;font-weight:600">Munez</span>
+    <span style="font-size:9px;color:#f9f9f9;font-weight:400">Field Engineer</span>
+  </div>
+
+  <div style="padding-top:10px;">
+    <div class="divider-whitee"></div>
+  </div>
+
+<div class="navigation-btn">
+  <div class="nav-btn active">
+    <div class="inner-nav text-center">
+      <img src="house.png" style="width: 13%;padding-bottom: 5px;margin-right: 5px;"></img>
+      <label style="font-size:13px;font-weight:500;font-family:OpenSans-Semibold">Home</label>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+  <div class="set-btn ">
+
+    <div class="inner text-center ">
+      <img src="settings.png" style="width: 10%;padding-bottom: 1px;padding-right: 2px;"></img>
+      <label style="font-size:10px;">SETTINGS</label>
+    </div>
+
+  </div>
+
 
 
     </nav>
@@ -170,12 +191,12 @@
                     <div class="hamburger" id="sidebarCollapse"></div>
                 </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <label class="title">{{$root.selectedCategory}}</label>
+                <div style="text-align: center;" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <label class="title">Home</label>
                     <ul class="nav navbar-nav navbar-right">
 
-                        <li class="popover__wrapper">
-                          <div class="user-avatar"></div>
+                        <!--<li class="popover__wrapper">
+                          <!-- <div class="user-avatar"></div>
                             <div class="push popover__content">
                                 <div>
                                     <p class="popover__message uname">Alex</p>
@@ -192,14 +213,14 @@
                                     <img src="images/Layer 12.png" ng-click="changeLanguage('ch')"
                                          ng-disabled="chinaFlag" ng-class="!chinaFlag ? 'selected':'unselected'">
                                 </div>
-                            </div>
-                        </li>
+                            </div> -->
+                        <!--</li> -->
 
-                        <li class="sync" ng-click="syncFunctionality()"></li>
+                         <li class="sync" ng-click="syncFunctionality()"></li>
                         <li class="save" ng-click="saveValues()"></li>
                     </ul>
 
-                      <div class="badgee" ng-show="onlineStatus"></div>
+                      <!-- <div class="badgee" ng-show="onlineStatus"></div> -->
                 </div>
             </div>
         </nav>

@@ -94,7 +94,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     /*padding: 13px;*/
-    height: 150px;
+    height: 65px;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.20);
     /*background-color: #f80000;*/
 
@@ -173,9 +173,9 @@ a.article, a.article:hover {
 
 .logoIcon{
     background: white;
-    height: 70%;
+    height: 100%;
     background-position: center !important;
-    background-image: url(../images/alex.png);
+    background-image: url(../images/Oracle-logo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-bottom: solid 1px #ffffff;
@@ -217,26 +217,27 @@ a.article, a.article:hover {
 
 }
 .save{
-    height: 38px;
-    width: 34px;
+    height: 28px;
+    width: 26px;
     background-position: center !important;
     background-image: url('../images/save/save.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    left: 30px;
+
 }
 .sync{
-    height: 38px;
-    width: 33px;
+    height: 27px;
+    width: 25px;
     background-position: center !important;
     background-image: url('../images/syncup/syncup.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-left: 30px;
+    right:25px;
 }
 .title{
   font-family: OpenSans-Light;
-  font-size: 18px;
+  font-size: 17px;
   color: #283d3f;
   width: 75%;
   text-align: center;
@@ -1340,93 +1341,61 @@ color:#004b8d;
     margin: 0 auto;
 }
 .MyCalendarselected{
-  background-image: url(../images/calendar/calendar.png);
+  background-image: url(../images/calendar/Rectangle8copy.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 32px;
-  height: 32px;
-    float:left;
+  height: 28px;
 }
 .MyCalendar{
-  background-image: url(../images/calendar/calendar.png);
+  background-image: url(../images/calendar/Rectangle8copy.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 32px;
-  height: 32px;
-    float:left;
+  height: 28px;
 }
 .MyTaskselected{
-  background-image: url(../images/mytask/list.png);
+  background-image: url(../images/mytask/myTaskSel.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 32px;
-  height: 32px;
-    float:left;
+  width: 26px;
+  height: 36px;
 }
 .MyTask{
-  background-image: url(../images/mytask/list.png);
+  background-image: url(../images/mytask/myTaskSel.png);
    background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 32px;
-  height: 32px;
-    float:left;
+  width: 26px;
+  height: 36px;
 }
 .TaskOverviewselected{
-  background-image: url(../images/taskoverview/home.png);
+  background-image: url(../images/taskoverview/taskOverflowSel.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 32px;
-  height: 32px;
-    float:left;
+  width: 35px;
+  height: 40px;
 }
 .TaskOverview{
-  background-image: url(../images/taskoverview/home.png);
+  background-image: url(../images/taskoverview/taskOverflowSel.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 32px;
-  height: 32px;
-    float:left;
+  width: 30px;
+  height: 38px;
 }
 .Debriefselected{
-  background-image: url(../images/debrief/debrief.png);
+  background-image: url(../images/debrief/brief.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 32px;
-  height: 32px;
-    float:left;
+  width: 36px;
+  height: 27px;
 }
 .Debrief{
-  background-image: url(../images/debrief/debrief.png);
+  background-image: url(../images/debrief/brief.png);
    background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 32px;
-  height: 32px;
-    float:left;
+  width: 38px;
+  height: 27px;
 }
-.settingImage{
-    background-image: url(../images/debrief/settings.png);
-    background-repeat: no-repeat;
-   background-size: 100% 100%;
-   width: 32px;
-   height: 32px;
-   float:left;
-}
-.settings{
-  position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-}
-/* .sidenav-text{
-    font-family: OpenSans-Bold;
-    font-size: 12px;
-    color: #ffffff;
-}
-.sidenav-text-Sel{
-   font-family: OpenSans-Bold;
-    font-size: 12px;
-    color: #ffffff;
-} */
 
 .md-tab.md-active {
   color :#00aa7e !important;
@@ -1691,5 +1660,89 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
     background-image: url(../images/MPLS2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+}
+
+
+.parent-circlee{
+  border-radius:45px;
+  width:90px;
+  height:90px;
+  background: none;
+  border : 1px solid #33c28b ;
+  display: table;
+  margin: 0 auto;
+}
+
+.imageHeadd{
+  border-radius:45px;
+  width:90px;
+  height:90px;
+  background:none;
+  border:1px solid #33c28b;
+  margin:0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 7px;
+}
+
+.circle-online{
+  padding-top: 40px;
+}
+
+.nav-btn{
+  width:130px;
+  height:50px;
+  background:none;
+  cursor: pointer;
+  color:#fff;
+}
+
+.inner-nav{
+  text-align: center;
+vertical-align: middle;
+line-height: 50px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.set-btn{
+  width:130px;
+  height:40px;
+  background-color: #33c28b;
+  position:absolute;
+  bottom:0px;
+  cursor: pointer;
+}
+.inner{
+  text-align: center;
+vertical-align: middle;
+line-height: 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.sideNav {
+  width:130px;
+  height:40px;
+  background: none;
+}
+
+.active{
+background-color: #f3f3f3;
+border-left: 4px solid #33c28b;
+color : #33c28b !important;
+}
+
+.navigation-btn{
+  padding-top: 30px;
+}
+
+.divider-whitee {
+  width : 30px;
+  height:1px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
 
 }
