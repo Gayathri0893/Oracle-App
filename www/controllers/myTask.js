@@ -166,7 +166,7 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
 
         $("fc-left").addClass("col-md-4");
 
-        $('.showTaskList').hide();
+        /*$('.showTaskList').hide();*/
 
         $('#calendar').fullCalendar({
             customButtons: {
@@ -176,11 +176,11 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
                         $scope.showMonth = true;
                     }
                 },
-                myCalendar: {
+               myCalendar: {
                     text: 'My Calendar',
-                    click: function () {
-
-                        $(document).ready(function () {
+                    click: function (item) {
+console.log(item);
+                        /*$(document).ready(function () {
 
                             if ($('.showTaskList').is(":visible")) {
 
@@ -190,14 +190,15 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
                                 $('.fc-toolbar.fc-header-toolbar').show();
                                 $('.showMonth').show();
                             }
-                        });
+                        });*/
+                        $state.go('myTask');
                     }
                 },
-                myTask: {
+               myTask: {
                     text: 'My Field Job',
                     click: function () {
 
-                        if ($('.fc-view-container').is(":visible")) {
+                        /*if ($('.fc-view-container').is(":visible")) {
 
                             $('.fc-view-container').hide();
                             $('#calendar > div.fc-toolbar.fc-header-toolbar > div.fc-center > div').hide();
@@ -205,7 +206,10 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
                             $('.showMonth').hide();
                             $('.showTaskList').show();
                             $rootScope.tabClicked = true;
-                        }
+                        }*/
+                        $state.go('myFieldJob');
+                        $rootScope.tabClicked = true;
+                        $rootScope.selectedItem=2;
                     }
                 }
             },

@@ -61,39 +61,39 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
     }
 
     $scope.sideNavItems = [
+        
         {
-             id: 1,
+            id: 1,
             displayName: "Home",
-            name: "TaskOverview",
-            controller: "taskOverflow",
-            image: "images/oracle/home.png",
-            imageSelected: "images/oracle/home.png"
+            name: "MyTask",
+            controller: "myTask",
+            image: "images/mytask/Shape36.png",
+            imageSelected: "images/mytask/myTaskSel.png"
         },
         {
             id: 2,
-            displayName: "Task",
-            name: "MyTask",
-            controller: "myTask",
-            image: "images/oracle/list.png",
-            imageSelected: "images/oracle/list.png"
-        },
-        {
-            id: 3,
-
-            displayName: "Debrief",
-            name: "Debrief",
-            controller: "debrief",
-            image: "images/oracle/debrief.png",
-            imageSelected: "images/oracle/debrief.png"
-        },
-        {
-            id: 4,
-
             displayName: "Calendar",
             name: "MyCalendar",
             controller: "myTask",
-            image: "images/oracle/calendar.png",
-            imageSelected: "images/oracle/calendar.png"
+            image: "images/calendar/Rectangle8.png",
+            imageSelected: "images/calendar/Rectangle8copy.png"
+        },
+        
+        {
+            id: 3,
+            displayName: "Task",
+            name: "TaskOverview",
+            controller: "taskOverflow",
+            image: "images/taskoverview/taskoverview.png",
+            imageSelected: "images/taskoverview/taskOverflowSel.png"
+        },
+        {
+            id: 4,
+            displayName: "Debrief",
+            name: "Debrief",
+            controller: "debrief",
+            image: "images/debrief/brief copy.png",
+            imageSelected: "images/debrief/brief.png"
         }];
 
     $rootScope.selectedItem = $scope.sideNavItems[0].id;
@@ -120,14 +120,14 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
 
                 $state.go(item.controller);
 
-                if ($('.showTaskList').is(":visible")) {
+                /*if ($('.showTaskList').is(":visible")) {
 
                     $('.showTaskList').hide();
                     $('.fc-view-container').show();
                     $('#calendar > div.fc-toolbar.fc-header-toolbar > div.fc-center > div').show();
                     $('.fc-toolbar.fc-header-toolbar').show();
                     $('.showMonth').show();
-                }
+                }*/
 
                 $rootScope.selectedCategory = 'Field Service'
 
@@ -139,16 +139,16 @@ app.controller('indexController', function ($scope, $state, $timeout, $mdSidenav
 
                 $rootScope.showTaskDetail = false;
 
-                $state.go("myTask");
+                $state.go("myFieldJob");
 
-                setTimeout(function () {
+               /* setTimeout(function () {
 
                     $('.fc-view-container').hide();
                     $('#calendar > div.fc-toolbar.fc-header-toolbar > div.fc-center > div').hide();
                     $('.fc-toolbar.fc-header-toolbar').hide();
                     $('.showMonth').hide();
                     $('.showTaskList').show();
-                }, 100);
+                }, 100);*/
 
                 $rootScope.selectedCategory = 'My Field Job';
 

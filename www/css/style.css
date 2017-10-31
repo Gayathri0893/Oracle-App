@@ -69,6 +69,9 @@ a, a:hover, a:focus {
     font-family: OpenSans-Bold;
     font-size: 12px;
     color: #ffffff;
+    position: relative;
+    top: -10px;
+    left: 10px;
 }
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -189,12 +192,12 @@ a.article, a.article:hover {
     background-size: 100% 100%;
 }
 .categryAicon {
-    text-align: center;
+   /* text-align: center;*/
     color: #000000;
     /* height: 66px; */
     padding-bottom: 18px;
     padding-top: 18px;
-    border-bottom: solid 1px #fff;
+   /* border-bottom: solid 1px #fff;*/
     outline: none;
 
 }
@@ -1235,7 +1238,7 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
 .sidenav-text-Sel{
    font-family: OpenSans-Bold;
     font-size: 12px;
-    color: #ffffff;
+    color: #f80000;
 }
 .back-btn{
   background-color: #ffffff !important;
@@ -1338,7 +1341,9 @@ color:#004b8d;
   color: #00aa7e !important;
 }
 .categryAicon div{
-    margin: 0 auto;
+  /*  margin: 0 auto;*/
+  margin-left: 15px;
+    display: inline-block;
 }
 .MyCalendarselected{
   background-image: url(../images/calendar/Rectangle8copy.png);
@@ -1709,7 +1714,7 @@ line-height: 50px;
 .set-btn{
   width:130px;
   height:40px;
-  background-color: #33c28b;
+  background-color: #f80000;
   position:absolute;
   bottom:0px;
   cursor: pointer;
@@ -1745,4 +1750,8 @@ color : #33c28b !important;
   border-radius: 10px;
   margin: 0 auto;
 
+}
+.fieldjob-scroll{
+      height: 500px !important;
+    overflow-y: scroll !important;
 }

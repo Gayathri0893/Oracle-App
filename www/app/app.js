@@ -44,10 +44,21 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         controller: "loginController",
         templateUrl: "app/views/Login.html"
     })
+    $stateProvider.state("myFieldJob", {
+        url: "/myFieldJob",
+        controller: "myTaskController",
+        templateUrl: "app/views/myFieldJob.html"
+    })
+    $stateProvider.state("home", {
+        url: "/home",
+        controller: "myTaskController",
+        templateUrl: "app/views/Home.html"
+    })
+
     $stateProvider.state("myTask", {
         url: "/myTask",
         controller: "myTaskController",
-        templateUrl: "app/views/MyTask.html"
+        templateUrl: "app/views/Calendar.html"
     })
     $stateProvider.state("debrief", {
         url: "/debrief",

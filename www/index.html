@@ -154,24 +154,38 @@
     <div class="divider-whitee"></div>
   </div>
 
-<div class="navigation-btn">
-  <div class="nav-btn active">
+<!-- <div class="navigation-btn">
+  <div class="nav-btn" ng-repeat="item in sideNavItems" ng-click="menuClick(item)" ng-class="{'active':item.id == $root.selectedItem}" ng-if="(item.name=='Debrief' && $root.showDebrief) || item.name=='MyCalendar' || item.name=='MyTask' ||(item.name=='TaskOverview' && $root.showTaskDetail)">
     <div class="inner-nav text-center">
-      <img src="house.png" style="width: 13%;padding-bottom: 5px;margin-right: 5px;"></img>
-      <label style="font-size:13px;font-weight:500;font-family:OpenSans-Semibold">Home</label>
+      
+      <div ng-class="{ '{{item.name}}selected' : item.id == $root.selectedItem, '{{item.name}}' : item.id !== $root.selectedItem }"></div>
+     <br>
+      <label style="font-size:13px;font-weight:500;font-family:OpenSans-Semibold" ng-class="{'sidenav-text-Sel':item.id == $root.selectedItem}">{{item.displayName}}</label>
     </div>
 
   </div>
 
 
 
-</div>
+</div> -->
+ <ul class="list-unstyled components">
+
+            <li class="categryAicon" ng-click="menuClick(item)" ng-repeat="item in sideNavItems"
+                ng-class="{'active':item.id == $root.selectedItem}"
+                ng-if="(item.name=='Debrief' && $root.showDebrief) || item.name=='MyCalendar' || item.name=='MyTask' ||(item.name=='TaskOverview' && $root.showTaskDetail)">
+                <!--  <img ng-src="{{item == selectedItem ? item.imageSelected : item.image}}"><br> -->
+                <div ng-class="{ '{{item.name}}selected' : item.id == $root.selectedItem, '{{item.name}}' : item.id !== $root.selectedItem }"></div>
+                
+                <span class="sidenav-text" ng-class="{'sidenav-text-Sel':item.id == $root.selectedItem}">{{item.displayName}}</span>
+            </li>
+
+        </ul>
 
   <div class="set-btn ">
 
     <div class="inner text-center ">
       <img src="settings.png" style="width: 10%;padding-bottom: 1px;padding-right: 2px;"></img>
-      <label style="font-size:10px;">SETTINGS</label>
+      <label style="font-size:14px;">SETTINGS</label>
     </div>
 
   </div>

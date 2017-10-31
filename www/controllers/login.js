@@ -68,7 +68,8 @@ app.controller('loginController', function ($scope, $compile, $timeout, uiCalend
 
                 } else {
 
-                    $state.go('myTask');
+                    $state.go('home');
+                    $rootScope.selectedItem = 1;
                 }
 
             } else {
