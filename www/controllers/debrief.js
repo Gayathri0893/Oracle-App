@@ -1086,7 +1086,8 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
                 doc1.text(475, 95, 'Duration value')
                 
                 doc1.setFontSize(22)
-    doc1.setFontType('bold')doc1.text(25, 110, 'Service Request')
+    doc1.setFontType('bold')
+                doc1.text(25, 110, 'Service Request')
                 doc1.text(25, 120, $scope.summary.taskObject.Service_Request)
                 doc1.setFontSize(22)
     doc1.setFontType('bold')
