@@ -413,17 +413,7 @@ console.log(item);
 
     $scope.calendarView = function () {
 
-        $(document).ready(function () {
-
-            if ($('.showTaskList').is(":visible")) {
-
-                $('.showTaskList').hide();
-                $('.fc-view-container').show();
-                $('#calendar > div.fc-toolbar.fc-header-toolbar > div.fc-center > div').show();
-                $('.fc-toolbar.fc-header-toolbar').show();
-                $('.showMonth').show();
-            }
-        });
+         $state.go('myTask');
     }
 
     $scope.startWork = function () {
