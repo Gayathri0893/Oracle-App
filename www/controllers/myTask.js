@@ -29,12 +29,7 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
     {
       heading : "To add the quipment for the job number 20",
       date : "20/5/2017",
-    },
-    {
-      heading : "To add the quipment for the job number 20",
-      date : "20/5/2017",
-    },
-  
+    }
   ]
 
     $scope.showSearchTaskDiv = false;
