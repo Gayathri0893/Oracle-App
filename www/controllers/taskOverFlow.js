@@ -214,10 +214,29 @@ $http.get("app/json/installBaseCloud.json").then(function(response) {
 
 function getAttachments()
 {
-    cloudService.getFileIds(valueService.getResourceId(),$scope.form,function(response){
+    /*cloudService.getFileIds(valueService.getResourceId(),$scope.form,function(response){
         if(response.Attachments_Info!=undefined && response.Attachments_Info.length>0)
         {
             angular.forEach(response.Attachments_Info,function(key,value)
+            {
+                if(key.Task_Id==$scope.taskId )
+                {
+                    $scope.Attachments=key.Attachments;
+                    angular.forEach($scope.Attachments,function(key,value)
+                    {
+                        download(key,function(response)
+                        {
+                            key.base64Code=response;
+                        });
+                    });
+                }
+            } )
+        }
+    })*/
+    $http.get("app/json/getFieldIds.json").then(function(response) {
+        if(response.data.Attachments_Info!=undefined && response.data.Attachments_Info.length>0)
+        {
+            angular.forEach(response.data.Attachments_Info,function(key,value)
             {
                 if(key.Task_Id==$scope.taskId )
                 {

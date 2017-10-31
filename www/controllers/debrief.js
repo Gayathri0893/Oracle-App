@@ -1389,10 +1389,10 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
 
         if ($scope.timeArray) {
 
-            cloudService.uploadTime(form, timeUploadJSON, function (respose) {
+            /*cloudService.uploadTime(form, timeUploadJSON, function (respose) {
 
                 console.log("Uploaded Time Data");
-            });
+            });*/
         }
 
         var expenseUploadJSON = {
@@ -1403,10 +1403,10 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
 
         if ($scope.expenseArray) {
 
-            cloudService.updateExpenses(form, expenseUploadJSON, function (respose) {
+            /*cloudService.updateExpenses(form, expenseUploadJSON, function (respose) {
 
                 console.log("Uploaded Expense Data");
-            });
+            });*/
         }
 
         var materialUploadJSON = {
@@ -1417,10 +1417,10 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
 
         if ($scope.materialArray) {
 
-            cloudService.updateMaterial(form, materialUploadJSON, function (respose) {
+            /*cloudService.updateMaterial(form, materialUploadJSON, function (respose) {
 
                 console.log("Uploaded materail");
-            });
+            });*/
         }
 
         var notesUploadJSON = {
@@ -1431,10 +1431,10 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
 
         if ($scope.notesArray) {
 
-            cloudService.updateNotes(form, notesUploadJSON, function (respose) {
+            /*cloudService.updateNotes(form, notesUploadJSON, function (respose) {
 
                 console.log("Uploaded notes");
-            });
+            });*/
         }
 
         var attachmentUploadJSON = {
@@ -1443,13 +1443,13 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
 
         if ($scope.files) {
 
-            cloudService.createAttachment(form, attachmentUploadJSON, function (response) {
+            /*cloudService.createAttachment(form, attachmentUploadJSON, function (response) {
 
                 console.log("Attachment Uploaded Successfully");
-            });
+            });*/
         }
 
-        setTimeout(function () {
+        /*setTimeout(function () {
 
             var formData = {
                 "Taskstatus": [{
@@ -1463,7 +1463,7 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
                 console.log(response);
             });
 
-        }, 3000);
+        }, 3000);*/
     }
 
     $scope.followUp = false;

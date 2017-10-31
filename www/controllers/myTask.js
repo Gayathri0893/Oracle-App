@@ -35,16 +35,7 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
       date : "20/5/2017",
     },
   
-
   ]
-
-
-
-
-
-
-
-
 
     $scope.showSearchTaskDiv = false;
 
@@ -468,10 +459,10 @@ console.log(item);
                 }]
             };
 
-            cloudService.acceptTask(formData, function (response) {
+            /*cloudService.acceptTask(formData, function (response) {
 
                 console.log(response);
-            });
+            });*/
         }
     }
 });
