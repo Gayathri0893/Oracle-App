@@ -1046,7 +1046,7 @@ app.controller("debriefController", function ($scope,$http, $state, $rootScope, 
                 doc1.addImage(logo, 'JPEG', 75, 15, 100, 40)
                 doc1.setFontSize(40)
                 doc1.setFontType('bold')
-                doc1.text(300, 35, 'Field Service Summary Report')
+                doc1.text(250, 35, 'Field Service Summary Report')
                 doc1.setFontSize(20)
                 doc1.setFontType('normal')
                 doc1.text(500, 20, 'Wipro Limited')
