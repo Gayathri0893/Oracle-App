@@ -157,7 +157,7 @@
 <!-- <div class="navigation-btn">
   <div class="nav-btn" ng-repeat="item in sideNavItems" ng-click="menuClick(item)" ng-class="{'active':item.id == $root.selectedItem}" ng-if="(item.name=='Debrief' && $root.showDebrief) || item.name=='MyCalendar' || item.name=='MyTask' ||(item.name=='TaskOverview' && $root.showTaskDetail)">
     <div class="inner-nav text-center">
-      
+
       <div ng-class="{ '{{item.name}}selected' : item.id == $root.selectedItem, '{{item.name}}' : item.id !== $root.selectedItem }"></div>
      <br>
       <label style="font-size:13px;font-weight:500;font-family:OpenSans-Semibold" ng-class="{'sidenav-text-Sel':item.id == $root.selectedItem}">{{item.displayName}}</label>
@@ -168,14 +168,14 @@
 
 
 </div> -->
- <ul class="list-unstyled components">
+ <ul class="list-unstyled components" style="margin-top:30px">
 
             <li class="categryAicon" ng-click="menuClick(item)" ng-repeat="item in sideNavItems"
                 ng-class="{'active':item.id == $root.selectedItem}"
                 ng-if="(item.name=='Debrief' && $root.showDebrief) || item.name=='MyCalendar' || item.name=='Home'|| item.name=='MyTask' ||(item.name=='TaskOverview' && $root.showTaskDetail)">
                 <!--  <img ng-src="{{item == selectedItem ? item.imageSelected : item.image}}"><br> -->
                 <div ng-class="{ '{{item.name}}selected' : item.id == $root.selectedItem, '{{item.name}}' : item.id !== $root.selectedItem }"></div>
-                
+
                 <span class="sidenav-text" ng-class="{'sidenav-text-Sel':item.id == $root.selectedItem}">{{item.displayName}}</span>
             </li>
 

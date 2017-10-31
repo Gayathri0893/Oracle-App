@@ -195,8 +195,8 @@ a.article, a.article:hover {
    /* text-align: center;*/
     color: #000000;
     /* height: 66px; */
-    padding-bottom: 18px;
-    padding-top: 18px;
+    padding-bottom: 8px;
+    padding-top: 8px;
    /* border-bottom: solid 1px #fff;*/
     outline: none;
 
@@ -1749,7 +1749,7 @@ line-height: 40px;
 
 .active{
 background-color: #f3f3f3;
-border-left: 4px solid #33c28b;
+border-left: 4px solid #C8001A;
 color : #33c28b !important;
 }
 
