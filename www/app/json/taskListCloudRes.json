@@ -1,6 +1,6 @@
-{  
-   "TaskDetails":[  
-      {  
+{
+   "TaskDetails":[
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171013-000024",
@@ -10,18 +10,19 @@
          "Labor_Method":"Goodwill",
          "Travel_Method":"Concession",
          "Material_Method":"Goodwill",
-         "Start_Date":"2017-11-06 04:09:00",
-         "End_Date":"2017-10-11 09:31:00",
+         "Start_Date":"2017-10-13 04:09:00",
+         "End_Date":"2017-10-14 03:31:00",
          "Duration":"300",
          "Customer_Name":"ROLLS ROYCE POWER ENGINEERING PLC",
          "Street_Address":"58 BED FUEL ROOM",
+         "Service_Type":"Repair order",
          "City":"DERBY",
          "State":"",
          "Zip_Code":"DE24 9BD",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"170928-000015",
@@ -31,18 +32,19 @@
          "Labor_Method":"Concession",
          "Travel_Method":"Concession",
          "Material_Method":"Billable",
-         "Start_Date":"2017-10-31 03:34:00",
-         "End_Date":"2017-11-01 03:34:00",
+         "Start_Date":"2017-10-21 03:34:00",
+         "End_Date":"",
          "Duration":"120",
          "Customer_Name":"ROLLS ROYCE POWER ENGINEERING PLC",
          "Street_Address":"CROYDON ENERGY",
+         "Service_Type":"Installation",
          "City":"CROYDON",
          "State":"LBC",
          "Zip_Code":"CR0 3RL",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":"1683"
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171016-000052",
@@ -52,18 +54,19 @@
          "Labor_Method":"Billable",
          "Travel_Method":"Billable",
          "Material_Method":"Billable",
-         "Start_Date":"2017-11-06 06:59:00",
-         "End_Date":"2017-11-08 03:20:00",
+         "Start_Date":"2017-10-17 06:59:00",
+         "End_Date":"2017-10-18 03:20:00",
          "Duration":"240",
          "Customer_Name":"ROLLS ROYCE POWER ENGINEERING PLC",
          "Street_Address":"58 BED FUEL ROOM",
          "City":"DERBY",
          "State":"",
+         "Service_Type":"Repair order",
          "Zip_Code":"DE24 9BD",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Field Job Completed",
          "Technician_ID":"5",
          "Service_Request":"171016-000052",
@@ -80,11 +83,12 @@
          "Street_Address":"58 BED FUEL ROOM",
          "City":"DERBY",
          "State":"",
+         "Service_Type":"Installation",
          "Zip_Code":"DE24 9BD",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Assigned",
          "Technician_ID":"5",
          "Service_Request":"171016-000052",
@@ -101,11 +105,12 @@
          "Street_Address":"58 BED FUEL ROOM",
          "City":"DERBY",
          "State":"",
+         "Service_Type":"Repair order",
          "Zip_Code":"DE24 9BD",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171016-000052",
@@ -122,11 +127,12 @@
          "Street_Address":"58 BED FUEL ROOM",
          "City":"DERBY",
          "State":"",
+         "Service_Type":"Repair order",
          "Zip_Code":"DE24 9BD",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171016-000052",
@@ -143,11 +149,12 @@
          "Street_Address":"58 BED FUEL ROOM",
          "City":"DERBY",
          "State":"",
+         "Service_Type":"Installation",
          "Zip_Code":"DE24 9BD",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171018-000014",
@@ -164,11 +171,12 @@
          "Street_Address":"PO BOX 1297",
          "City":"BLACKPOOL",
          "State":"",
+         "Service_Type":"Repair order",
          "Zip_Code":"FY1 9GY",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":"1738"
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171018-000014",
@@ -185,11 +193,12 @@
          "Street_Address":"PO BOX 1297",
          "City":"BLACKPOOL",
          "State":"",
+         "Service_Type":"Installation",
          "Zip_Code":"FY1 9GY",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":"1814"
       },
-      {  
+      {
          "Task_Status":"Assigned",
          "Technician_ID":"5",
          "Service_Request":"171018-000076",
@@ -206,11 +215,12 @@
          "Street_Address":"RAYNESWAY PARK DR",
          "City":"DERBY",
          "State":"",
+         "Service_Type":"Installation",
          "Zip_Code":"DE21 7XX",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171018-000076",
@@ -227,11 +237,12 @@
          "Street_Address":"RAYNESWAY PARK DR",
          "City":"DERBY",
          "State":"",
+         "Service_Type":"Repair Order",
          "Zip_Code":"DE21 7XX",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Accepted",
          "Technician_ID":"5",
          "Service_Request":"171018-000076",
@@ -241,18 +252,19 @@
          "Labor_Method":"",
          "Travel_Method":"",
          "Material_Method":"",
-         "Start_Date":"2017-11-08 07:24:00",
-         "End_Date":"2017-11-11 07:36:00",
+         "Start_Date":"2017-10-16 07:24:00",
+         "End_Date":"2017-10-18 07:36:00",
          "Duration":"330",
          "Customer_Name":"ROLLS ROYCE MARINE OPERATIONS LTD",
          "Street_Address":"RAYNESWAY PARK DR",
          "City":"DERBY",
          "State":"",
          "Zip_Code":"DE21 7XX",
+         "Service_Type":"Installation",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Assigned",
          "Technician_ID":"5",
          "Service_Request":"171018-000076",
@@ -270,10 +282,11 @@
          "City":"DERBY",
          "State":"",
          "Zip_Code":"DE21 7XX",
+         "Service_Type":"Installation",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":""
       },
-      {  
+      {
          "Task_Status":"Assigned",
          "Technician_ID":"5",
          "Service_Request":"171019-000014",
@@ -292,9 +305,10 @@
          "State":"LAN",
          "Zip_Code":"L33 7UZ",
          "Name":"Baber, Mr. Vernon",
+         "Service_Type":"Repair Order",
          "Activity_Id":"1811"
       },
-      {  
+      {
          "Task_Status":"Field Job Completed",
          "Technician_ID":"5",
          "Service_Request":"171020-000010",
@@ -312,6 +326,7 @@
          "City":"MERSEYSIDE",
          "State":"LAN",
          "Zip_Code":"L33 7UZ",
+         "Service_Type":"Installation",
          "Name":"Baber, Mr. Vernon",
          "Activity_Id":"1886"
       }

@@ -3,33 +3,38 @@ app.controller('myTaskController', function ($scope, $compile, $timeout, uiCalen
 
   $scope.lists = [
     {
-      heading : "To add the quipment for the job number 20",
+      heading : "Line Card replacement for job 17032 ",
       date : "20/5/2017",
     },
     {
-      heading : "To add the quipment for the job number 20",
+      heading : "MPLS Check/Networking monitoring for job 17034",
       date : "20/5/2017",
     },
     {
-      heading : "To add the quipment for the job number 20",
+      heading : "Preventive maintainance Check for job 17045",
       date : "20/5/2017",
     },
     {
-      heading : "To add the quipment for the job number 20",
+      heading : "General inspection for job 17890",
       date : "20/5/2017",
     },
     {
-      heading : "To add the quipment for the job number 20",
+      heading : "Site visit for job 17654",
       date : "20/5/2017",
     },
     {
-      heading : "To add the quipment for the job number 20",
+      heading : "Installation activity for network card",
       date : "20/5/2017",
     },
     {
-      heading : "To add the quipment for the job number 20",
+      heading : "Wireless check on job 17458",
+      date : "20/5/2017",
+    },
+    {
+      heading : "Wireless check on job 17458",
       date : "20/5/2017",
     }
+
   ]
 
     $scope.showSearchTaskDiv = false;
@@ -413,7 +418,17 @@ console.log(item);
 
     $scope.calendarView = function () {
 
-         $state.go('myTask');
+        $(document).ready(function () {
+
+            if ($('.showTaskList').is(":visible")) {
+
+                $('.showTaskList').hide();
+                $('.fc-view-container').show();
+                $('#calendar > div.fc-toolbar.fc-header-toolbar > div.fc-center > div').show();
+                $('.fc-toolbar.fc-header-toolbar').show();
+                $('.showMonth').show();
+            }
+        });
     }
 
     $scope.startWork = function () {

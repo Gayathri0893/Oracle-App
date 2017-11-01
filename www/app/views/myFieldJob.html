@@ -63,7 +63,7 @@
                         <th md-column ><span>Field Job#</span></th>
                         <!-- <th md-column><span>Field Job Details</span></th> -->
                         <th md-column><span>Customer</span></th>
-                        <th md-column><span>Location</span></th>
+                        <th md-column><span>Service Type</span></th>
                         <th md-column><span translate="Start Date"></span></th>
                         <th md-column>
                             <md-select ng-model="selectedTaskStatus" ng-change="changeTaskStatus(selectedTaskStatus)" placeholder="Status">
@@ -80,9 +80,9 @@
                         <td md-cell>{{task.Task_Number}}</td>
                         <!-- <td md-cell>{{task.Job_Description}}</td> -->
                         <td md-cell>{{task.Customer_Name}}</td>
-                        <td md-cell>{{task.Street_Address}},{{task.City}},{{task.State}}</td>
+                        <td md-cell>{{task.Service_Type}}</td>
                        <!--  <td md-cell> {{task.Start_Date.split(" ")[0] | timezonefilter}} </td> -->
-                         <td md-cell>{{task.Start_Date.split(" ")[0] | date:'dd/MM/yyyy hh:mm:ss' }}</td> 
+                         <td md-cell>{{task.Start_Date.split(" ")[0] | date:'dd/MM/yyyy hh:mm:ss' }}</td>
                         <td md-cell>
                             <md-button class="md-raised" ng-class="{red : task.Task_Status == 'Accepted',green : task.Task_Status == 'Field Job Completed',blue : task.Task_Status == 'Assigned',green : task.Task_Status == 'Completed' }">{{task.Task_Status == 'Field Job Completed' ? 'Completed' : task.Task_Status}}</md-button>
                         </td>

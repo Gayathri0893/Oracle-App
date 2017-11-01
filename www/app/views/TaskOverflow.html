@@ -3,7 +3,7 @@
     </script>
 <md-toolbar class="category-title" layout="row">
     <div class="md-toolbar-tools toolbar">
-        
+
         <md-button  aria-label="Learn More"  ui-sref="taskOverFlow">
             FIELD JOB DETAILS
         </md-button>
@@ -76,17 +76,17 @@
         <div class="margintop30" layout="row">
             <div flex="30">
                 <div class="mylabel">PRODUCT LINE</div>
-                <div class="myvalue">{{taskDetails.Product_Line|| "NO VALUE"}}</div>
+                <div class="myvalue">{{taskDetails.Product_Line|| "MPLS"}}</div>
 
             </div>
 
             <div flex="30">
-                <div class="mylabel">SYSTEM ID/SERIAL</div>
+                <div class="mylabel">SUB PRODUCT</div>
                 <div class="myvalue">
                     <!-- <span>DN 1200</span>
                     <span>DN 908098</span><br>
                     <span>DN 1090909009</span> -->
-                    {{taskDetails.Serial_Number|| "NO VALUE"}}
+                    {{taskDetails.Serial_Number|| "L3P1C CLOUD"}}
                 </div>
 
             </div>
@@ -94,8 +94,8 @@
             <div flex="60">
                 <div layout="row">
                     <div flex="50">
-                        <div class="mylabel">TAG #</div>
-                        <div class="myvalue">{{taskDetails.tagNo|| "NO VALUE"}}</div>
+                        <div class="mylabel">CONTRACT PERIOD</div>
+                        <div class="myvalue">{{taskDetails.tagNo|| "6 MONTHS"}}</div>
                     </div>
                     <div flex="50">
                         <div class="mylabel">ORGINAL PO #</div>
